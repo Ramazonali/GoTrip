@@ -1,0 +1,252 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Rubik", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1150px;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+.site-header {
+    padding-block: 36px;
+    background-color: #3E8989;
+}
+
+.site-header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-item {
+    border-bottom: 3px solid white;
+    border-radius: 1px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    &:hover {
+        border-bottom: 3px solid white;
+        border-radius: 1px;
+        }
+}
+
+.site-header__input {
+    display: flex;
+    align-items: center;
+}
+
+.site-header__inp {
+    padding-block: 8px;
+    padding-left: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    outline: none;
+    border: none;
+}
+
+.site-header__btn {
+    padding-block: 8px;
+    padding-inline: 14px;
+    font-size: 14px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    background-color: #295E5E;
+    color: white;
+    transition: all 0.4s ease;
+    &:hover {
+        cursor: pointer;
+    background-color: #214e4e;
+
+    }
+}
+
+/* Site Main Start */
+.site-hero {
+    background-image: url("./images/Header.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.site-hero__wrapper{
+    padding-top: 250px;
+    padding-bottom: 288px;
+    text-align: center;
+    color: white;
+}
+
+.site-hero__wrapper h1 {
+    font-size: 80px;
+    line-height: 94.5px;
+    font-weight: 600;
+}
+
+.site-hero__wrapper p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: 500;
+}
+
+.site-hero__wrapper button {
+    padding-block: 14px;
+    padding-inline: 78px;
+    border-radius: 30px;
+    background-color: #B4436C;
+    color: white;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.4s ease;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
+/* Site About Section Start */
+.site-aboute {
+    margin-top: 80px;
+    margin-bottom: 97px;
+}
+
+.site-aboute__wrapper h2 {
+    margin-bottom: 50px;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    color: #3E8989;
+    text-align: center;
+}
+
+.site-aboute__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.site-aboute__box p {
+    margin-top: 9px;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/* Site Catalog Start */
+.site-catalog {
+    margin-bottom: 104px;
+}
+
+.site-catalog__wrapper h2 {
+    margin-bottom: 52px;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    color: #3E8989;
+    text-align: center;
+}
+
+.site-catalog__box {
+    width: fit-content;
+    text-align: center;
+}
+
+.site-catalog__card {
+    margin-bottom: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.site-catalog__card li:nth-child(2) {
+    color: #B4436C;
+}
+
+.site-catalog__box h3{
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        color: #B4436C;
+    }
+}
+
+.site-catalog__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-catalog__info p {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.site-catalog__link {
+    text-decoration: none;
+    color: black;
+    display: block; 
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* Site Footer Start */
+.site-footer {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    background-color: #3E8989;
+    text-align: center;
+}
+
+.site-footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.site-footer__link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.site-footer__wrapper p {
+    margin-top: 59px;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+}
