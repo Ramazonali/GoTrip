@@ -135,6 +135,10 @@ img {
     }
 }
 
+.site-catalog__boxex {
+    margin-left: 40px;
+}
+
 /* Site About Section Start */
 .site-aboute {
     margin-top: 80px;
@@ -187,6 +191,10 @@ img {
     align-content: center;
     justify-content: space-between;
     gap: 20px;
+    overflow-x: scroll;
+}
+::-webkit-scrollbar {
+    height: 1px;
 }
 
 .site-catalog__card li:nth-child(2) {
@@ -249,4 +257,92 @@ img {
     font-size: 14px;
     line-height: 17px;
     color: white;
+}
+
+.site-header__menu {
+    display: none;
+}
+
+.site-header__menu span{
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    top: -10px;
+    right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.span-menu__two {
+    transform: translateY(6px);
+}
+
+.span-menu__three {
+    transform: translateY(12px);
+}
+
+.site-header__menu:focus .span-menu__two {
+    display: none;
+}
+
+.site-header__menu:focus .span-menu__one {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.site-header__menu:focus .span-menu__three {
+    transform: translateY(10px) rotate(-45deg);
+}
+
+/* media start */
+@media only screen and (max-width: 1000px) {
+    .site-aboute__box {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .navbar {
+        display: none;
+        position: absolute;
+        top:46px;
+        left: 0;
+        width: 100%;
+        margin-top: 50px;
+        margin-inline: auto;
+        background-color: #3E8989;
+        padding-bottom: 20px;
+            
+    }
+    .site-header__input {
+        display: none;
+        margin-top: 40px;
+        margin-inline: auto;
+    }
+    .navbar-links {
+        flex-direction: column;
+    }
+    .site-header__menu {
+        position: relative; 
+        display: block; 
+    }
+    .site-header__menu:focus + .navbar{
+        transition: all 0.4s ease;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 595px) {
+    .site-catalog__info {
+        flex-direction: column;
+        text-align: center;
+    }
+    .site-catalog__boxex {
+        margin: 0px;
+        margin-top: 20px;
+    }
+    .site-catalog__info p{
+        max-width: 400px;
+        margin: 0 auto;
+    }
 }
